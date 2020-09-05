@@ -75,8 +75,6 @@ def find_split(x, y):
             infogain = start_entropy - (nleft / ntotal) * calculate_entropy(left_ys) - (
                         nright / ntotal) * calculate_entropy(right_ys)
 
-            # **************************************************************** 5 marks
-
             if infogain > best['infogain']:
                 best = {'feature': feature_index,
                         'split': split,
